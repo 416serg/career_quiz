@@ -30,6 +30,9 @@ Template.layout.helpers({
     var str1 = "&display=popup&ref=plugin&sdk=joey&src=share_button&u=http://careerpredictor.com&display=popup&ref=plugin&src=share_button";
     return str.concat(appId, str1);
   },
+  notQuestions: function() {
+  	return _.isUndefined(FlowRouter.getQueryParam('q'));
+  }
 });
 
 Template.layout.events({
