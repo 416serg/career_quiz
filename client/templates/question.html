@@ -1,0 +1,39 @@
+<template name="question">
+	{{#contentWrapper}}
+		
+    <div class="question-layout">
+	    <div class="full-height {{#if rwindow.screen 'gte' 'medium'}}valign-wrapper{{/if}} {{backgroundColor}} lighten-2">
+	    
+	      <div class="container wow">
+	      {{#with question}}
+	        <br><br>
+	        <h5 class="header center white-text text-lighten-2">{{title}}</h5>
+	        <div class="row center">
+	        	{{#each answers}}
+	          <div class="col s12 m6">
+	          	<a href="#" class="click-answer">
+			          <div class="card blue-grey darken-1 hoverable">
+			            <div class="card-content white-text valign-wrapper">
+			              <p class="center-align">{{this}}</p>
+			            </div>
+			          </div>
+		          </a>
+		        </div>
+		        {{/each}}
+
+		        <div class="col s12">
+		        	<p class="center-align">
+					      <a href="{{facebookLink}}" target="_blank" class="waves-effect waves-light btn facebook-blue btn-small">Share question on <i class="fa fa-facebook right"></i></a>
+					      <a href="https://twitter.com/intent/tweet{{tweetParams}}" target="_blank" class="waves-effect waves-light btn twitter-blue btn-small">Share question  on <i class="fa fa-twitter right"></i></a> 
+		        	</p>
+		        	<h5 class="white-text center-align">{{counter}}/15</h5>
+		        </div>
+	        </div>	
+	         {{/with}}  
+	      </div>
+	     
+	    </div>
+	  </div>
+	  
+	{{/contentWrapper}}
+</template>

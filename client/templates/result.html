@@ -1,0 +1,49 @@
+<template name="loading"></template>
+<template name="result">
+	{{#if loaded}}
+	<div class="question-layout">
+    <div class="{{#if rwindow.screen 'gte' 'medium'}}valign-wrapper{{/if}} {{backgroundColor}} lighten-2">
+    
+      <div class="container">
+        <br><br>
+        <div class="row center">
+    			<h5 class="header center white-text text-lighten-2">{{calcBlurb}}</h5>
+	        <div class="row center">
+	        	<div class="col s12">
+	        		<div class="card result-card hoverable">
+						  	<div class="card-image waves-effect waves-block waves-light">
+						    	<img class="activator" src="quiz_results/{{resultImg}}">
+						    </div>
+						    <div class="card-content left-align">
+						      <span class="card-title activator grey-text text-darken-4">{{result}}<span class="right activator"><span class="why-span">Why?</span> <i class="material-icons">more_vert</i></span></span><br/>
+						      <small>Do not question our data. It's perfect.</small>
+						      <p>
+						      <a href="{{facebookLink}}" target="_blank" class="waves-effect waves-light btn facebook-blue btn-small">Share on <i class="fa fa-facebook right"></i></a> 
+						      <a href="https://twitter.com/intent/tweet{{tweetParams}}" target="_blank" class="waves-effect waves-light btn twitter-blue btn-small">Share on <i class="fa fa-twitter right"></i></a> 
+						      <a href="#" id="again" class="waves-effect waves-light btn btn-small">Do the test again</a></p>
+						    </div>
+						    <div class="card-reveal left-align">
+						      <span class="card-title grey-text text-darken-4">{{result}} <i class="material-icons right">close</i></span>
+						      <p>{{resultBlurb}}</p>
+						      <p class="center-align">
+							      <a href="{{facebookLink}}" target="_blank" class="waves-effect waves-light btn facebook-blue btn-small">Share on <i class="fa fa-facebook right"></i></a> 
+							      <a href="https://twitter.com/intent/tweet{{tweetParams}}" target="_blank" class="waves-effect waves-light btn twitter-blue btn-small">Share on <i class="fa fa-twitter right"></i></a> 
+								  </p>
+						    </div>
+						  </div>
+						</div>
+	        </div>
+	        <div class="row">
+	        	<div class="col m6 offset-m3">
+	        		<p class="white-text center-align">Don't let a computer tell you what to do with your life. Head to <a href="https://raiseyourflag.com" class="ryf-link" target="_blank">Raise Your Flag</a> to explore your real possibilities.</p>
+	        	</div>
+	        </div>
+	        <br><br>
+        </div>	
+      </div>
+    </div>
+  </div>
+	{{else}}
+	{{> loading}}
+	{{/if}}
+</template>
