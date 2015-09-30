@@ -58,6 +58,7 @@ mrt:isolate-value@2.0.2
 natestrauser:font-awesome@4.4.0
 npm-mongo@1.4.39_1
 observe-sequence@1.0.7
+okgrow:analytics@0.3.0
 ordered-dict@1.0.4
 pcel:loading@1.0.3
 percolate:momentum@0.7.2
