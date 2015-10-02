@@ -35,7 +35,7 @@ Template.result.helpers({
   },
   facebookLink: function() {
     var str = "https://www.facebook.com/sharer/sharer.php?_rdr=p&app_id=";
-    var appId = "859416150762358";
+    var appId = Meteor.settings.public.facebook.appId
     var str1 = "&display=popup&ref=plugin&sdk=joey&src=share_button&u=http://careerpredictor.com&display=popup&ref=plugin&src=share_button";
     return str.concat(appId, str1);
   },
