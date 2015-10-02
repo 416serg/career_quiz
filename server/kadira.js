@@ -1,0 +1,1 @@
+Kadira.connect(Meteor.settings.public.kadira.appId, Meteor.settings.public.kadira.appSecret);
