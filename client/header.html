@@ -1,0 +1,26 @@
+<template name="header"> 
+  <ul id="dropdown1" class="dropdown-content">
+    <li><a href="https://raiseyourflag.com" target="_blank" style="padding-top: 0;">Made by <span class="icon-ryf_logo_font brand-icon"></span></a></li>
+    <li class="divider"></li>
+    <li><a href="https://www.facebook.com/claimthefuture" target="_blank"><i class="fa fa-facebook right"></i>Facebook</a></li>
+    <li><a href="https://twitter.com/claimthefuture" target="_blank"><i class="fa fa-twitter right"></i>Twitter</a></li>
+  </ul> 
+  <div class="navbar-fixed">
+    <nav class="white" role="navigation">
+      <div class="nav-wrapper container">
+        <a id="logo-container" href="{{pathFor 'home'}}" class="brand-logo" style="font-family: 'Satisfy', 'Roboto', Arial, sans-serif;">Career Predictor</a>
+        <ul class="right hide-on-med-and-down">
+          <li><a class="dropdown-button" href="#!" data-activates="dropdown1">About<i class="material-icons right">arrow_drop_down</i></a></li>
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+          <li><a href="https://raiseyourflag.com" target="_blank" style="padding-top: 0;">Made by <span class="icon-ryf_logo_font brand-icon"></span></a></li>
+          <li class="divider"></li>
+          <li><a href="https://www.facebook.com/claimthefuture" target="_blank">Facebook <i class="fa fa-facebook right" style="top: 18px;position: relative;"></i></a></li>
+          <li><a href="https://twitter.com/claimthefuture" target="_blank">Twitter <i class="fa fa-twitter right" style="top: 18px;position: relative;"></i></a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+</template>
