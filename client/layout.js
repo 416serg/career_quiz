@@ -35,6 +35,9 @@ Template.layout.helpers({
 });
 
 Template.layout.events({
+  'click .share-btn': function(e,t) {
+    analytics.track('Clicked Share Landing');
+  },
 	'click .btn-floating': function (e,t) {
 		// e.preventDefault();
 		$('.button-ul').css('display', 'block');

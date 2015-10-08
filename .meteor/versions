@@ -71,6 +71,7 @@ ordered-dict@1.0.4
 pcel:loading@1.0.3
 percolate:momentum@0.7.2
 percolate:velocityjs@1.1.0
+percolatestudio:segment.io@1.2.2_2
 philippspo:momentum-flow-router@0.0.7
 promise@0.5.0
 random@1.0.4

@@ -40,6 +40,9 @@ Template.question.helpers({
 });
 
 Template.question.events({
+	'click .share-question': function(e,t) {
+		analytics.track('Clicked Share Question');
+	},
 	'click .click-answer': function(e,t) {
 		e.preventDefault();
 		$('.container').addClass('fadeOutLeft');

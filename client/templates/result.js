@@ -45,8 +45,15 @@ Template.result.events({
 	'click #again': function (e,t) {
 		e.preventDefault();
 		Session.set('answeredQuestions', []);
+    analytics.track('Restart Quiz');
 		FlowRouter.go('/');
-	}
+	},
+  'click .share-result-btn': function(e,t) {
+    analytics.track('Clicked Share Result');
+  },
+  'click .ryf-link': function(e,t) {
+    analytics.track('Clicked RYF Link');
+  }
 });
 
 Template.loading.rendered = function () {

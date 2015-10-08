@@ -11,6 +11,7 @@ Template.home.helpers({
 Template.home.events({
 	'click #get-started': function(e,t) {
 		e.preventDefault();
+		analytics.track('Clicked Get Started');
 		Meteor.call('nextQuestion', Session.get('answeredQuestions'), function(error, result) {
 			if (!error) {
 				FlowRouter.go('question');
