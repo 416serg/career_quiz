@@ -51,7 +51,7 @@ Template.result.events({
   'click .share-result-btn': function(e,t) {
     analytics.track('Clicked Share Result');
   },
-  'click .ryf-link': function(e,t) {
+  'click .ryf-link-btn': function(e,t) {
     analytics.track('Clicked RYF Link');
   }
 });
