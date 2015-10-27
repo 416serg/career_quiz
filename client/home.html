@@ -1,5 +1,8 @@
 <template name="home">
   <!-- {{#contentWrapper}} -->
+  {{#if productHunt}}
+  	{{> productHuntT}}
+  {{/if}}
     <div id="landing-layout">
     	<div class="overlay"></div>
 	    <div class="{{#if rwindow.screen 'lt' 'medium'}}home-content{{else}}full-height{{/if}} valign-wrapper">
@@ -17,4 +20,20 @@
 	    </div>
 	  </div>
 	<!-- {{/contentWrapper}} -->
+</template>
+
+<template name="productHuntT">
+  <div class="product-hunt">
+    <div class="container">
+      <div class="row">
+        <div class="col s4">
+          <img src="/img/ph.png" class="responsive-img center-block" width="180">
+        </div>
+        <div class="col s8">
+          <p>Greetings Hunters! Thanks for checking out the new version of Raise Your Flag. Leave any feedback on the product page or reach out to us directly whenever you want. Find us <a href="/about">here</a>.</p>
+        </div>
+        <a href="#" id="dismiss-ph" class="btn btn-clear">Dismiss</a>
+      </div>
+    </div>
+  </div>
 </template>

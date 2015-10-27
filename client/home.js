@@ -5,7 +5,10 @@ Template.home.onRendered(function() {
 Template.home.helpers({
 	queryQuestion: function () {
 		return !_.isUndefined(FlowRouter.getQueryParam('q'));
-	}
+	},
+	productHunt: function() {
+    return FlowRouter.getQueryParam('ref') === "producthunt";
+  }
 });
 
 Template.home.events({
@@ -21,4 +24,11 @@ Template.home.events({
 			}
 		});
 	}
+});
+
+Template.productHuntT.events({
+  'click #dismiss-ph': function(e,t) {
+    e.preventDefault();
+    $('.product-hunt').fadeOut();
+  }
 });

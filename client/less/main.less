@@ -1,0 +1,40 @@
+@import "mixins.import.less";
+
+.product-hunt {
+    z-index: 9999;
+    position: absolute;
+    background-color: #DA552F;
+    color: #fff;
+    width: 100%;
+    a {
+        color: #40bf80;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    @media (min-width: 768px) {
+        p {
+            margin-top: 40px;
+
+        }
+    }
+    .btn-clear {
+        color: #fff;
+        background: transparent;
+        border-radius: 0;
+        border: 1px solid #fff;
+        font-weight: 400;
+        text-transform: none;
+        .transition-all;
+        &:hover {
+          color: #000;
+          background-color: #fff;
+          border-radius: 10px;
+        }
+      }
+    #dismiss-ph {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+    }
+}
